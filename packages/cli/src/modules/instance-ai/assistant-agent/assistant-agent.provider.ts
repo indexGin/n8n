@@ -256,7 +256,6 @@ export class AssistantAgentProvider implements SystemAgentProvider<AssistantSand
 			sessionGrants: turn.sessionGrants,
 			onDomainAccessTracker: () => {},
 			readSetupItemsSnapshots: async () => [],
-			syncWorkflowTasks: async () => {},
 			sandbox: {
 				resolveConfig: async () =>
 					lease?.config ?? {

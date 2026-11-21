@@ -73,7 +73,7 @@ export async function calculateWorkflowChecksum(workflow: WorkflowSnapshot): Pro
 
 	for (const field of WORKFLOW_CHECKSUM_FIELDS) {
 		const value = workflow[field];
-		if (value !== undefined) {
+		if (value !== undefined && value !== null) {
 			checksumPayload[field] = value;
 		}
 	}
